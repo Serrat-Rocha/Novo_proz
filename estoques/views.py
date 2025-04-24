@@ -89,3 +89,6 @@ def login_view(request):
         else:
             return render(request, 'estoques/fazer_login.html', {'error': 'Credenciais inválidas.'})
     return render(request, 'estoques/fazer_login.html')
+
+def error_404_view(request, exception):
+    return render(request, 'estoques/404.html')

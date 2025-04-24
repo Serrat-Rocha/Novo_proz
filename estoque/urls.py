@@ -22,3 +22,5 @@ urlpatterns = [
     path('', include('estoques.urls')),
     
 ]
+
+handler404 = "estoques.views.error_404_view"
